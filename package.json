@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jasmine-browser-runner",
     "start": "lite-server",
     "build:src": "copyfiles -u 1 src/*.{html,css,js} dist",
     "build:bs": "copyfiles -u 4 node_modules/bootstrap/dist/css/bootstrap.css dist",
