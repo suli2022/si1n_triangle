@@ -31,9 +31,13 @@ describe('A calcTriangleArea() függvény tesztje', () => {
 });
 
 describe('A checkInput() tesztjei', () => {
-    it('Számot az input?', () => {
+    it('Számot ad az input?', () => {
         let actual = checkInput('22');
         expect(actual).toBe(true);
+    });
+    it('Ha nem szám a bemenet, akkor false-t kapunk?', () => {
+        let actual = checkInput('aa');
+        expect(actual).toBe(false);
     });
 });
 
